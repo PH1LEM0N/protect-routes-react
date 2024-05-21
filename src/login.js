@@ -1,8 +1,11 @@
 import { useContext, useState } from "react";
-import UserDetailsProvider, { userDetailsContext } from "./user-details-provider";
+import { userDetailsContext } from "./user-details-provider";
 import queryString from "query-string";
 import { useLocation, useNavigate } from "react-router-dom";
 import { STORAGE_USER_ITEM_KEY } from "./user-details-provider";
+
+
+// https://zeltta.co.nz/article/how-to-detect-inactivity-and-auto-reset-a-react-app
 
 const Login = () => {
     const [username, setusername] = useState("");
